@@ -20,9 +20,9 @@ public class CircumferenceCalculator {
 		DecimalFormat df = new DecimalFormat();
 		df.setMaximumFractionDigits(2);
 		
-		System.out.println("El valor de la superficie es: "+df.format(surface));
-		System.out.println("El valor del volumen es: "+df.format(volume));
-		System.out.println("El valor de la longitud es: "+df.format(length));
+		System.out.println("El valor de la superficie es: "+df.format(surface)+"cm");
+		System.out.println("El valor del volumen es: "+df.format(volume)+"cm");
+		System.out.println("El valor de la longitud es: "+df.format(length)+"cm");
+		sc.close();
 	}
-
 }
