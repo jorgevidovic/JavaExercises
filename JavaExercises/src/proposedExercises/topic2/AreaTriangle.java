@@ -6,10 +6,10 @@ public class AreaTriangle {
 		
 		System.out.println("Programa para calcular el area de un triangulo.\n");
 		
-		System.out.println("introduce el valor de la base del triangulo: ");
+		System.out.print("Introduce el valor de la base del triangulo: ");
 		int base = sc.next().charAt(0);
 		
-		System.out.println("Introduce el valor de la altura del triangulo: ");
+		System.out.print("Introduce el valor de la altura del triangulo: ");
 		int height = sc.next().charAt(0);
 		
 		int area = (base*height)/2;
