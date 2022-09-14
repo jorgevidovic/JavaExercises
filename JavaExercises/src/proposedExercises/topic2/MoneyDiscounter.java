@@ -10,6 +10,7 @@ public class MoneyDiscounter {
 		System.out.print("Introduce el precio del producto: ");
 		price = sc.nextFloat();
 		discountedPrice = (float)(price*(0.85));
+
 		
 		System.out.printf("\nPrecio original del producto: %.2f$",price);
 		System.out.printf("\nPrecio con el descuento aplicado: %.2f$",discountedPrice);
