@@ -11,6 +11,7 @@ public class CircumferenceCalculator {
 				+ "\nde una circunferencia basada en su radio.\n");
 		System.out.print("Introduce el valor del radio de la circunferencia: ");
 		
+		//Variable zone
 		float pi = (float)Math.PI;
 		float radius = sc.nextFloat();
 		float length = 2*pi*radius;
