@@ -18,7 +18,7 @@ public class ModuleCalculator {
 		b = (float)Math.pow(b, 2);
 		
 		c = Float.parseFloat(JOptionPane.showInputDialog("Introduce el 3er valor:"));
-		c= (float)Math.pow(c, 2);
+		c = (float) Math.pow(c, 2);
 		
 		m = f.format((float) Math.sqrt(a+b+c));
 		
