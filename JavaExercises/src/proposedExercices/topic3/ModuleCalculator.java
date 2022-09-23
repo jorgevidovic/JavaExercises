@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.text.DecimalFormat;
 public class ModuleCalculator {
 	public static void main(String[] args) {
-		DecimalFormat f = new DecimalFormat("#.##");
+		DecimalFormat df = new DecimalFormat("#.##");
 		JOptionPane.showMessageDialog(null, "Programa para calcular el módulo de un vector.");
 		
 		float a;
@@ -20,7 +20,7 @@ public class ModuleCalculator {
 		c = Float.parseFloat(JOptionPane.showInputDialog("Introduce el 3er valor:"));
 		c = (float) Math.pow(c, 2);
 		
-		m = f.format((float) Math.sqrt(a+b+c));
+		m = df.format((float) Math.sqrt(a+b+c));
 		
 		JOptionPane.showMessageDialog(null, "El valor del módulo calculado es: " + m);
 	}
