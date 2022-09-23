@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class MaxAndMinCalculator_2 {
 	
 	public static void main(String[] args) {
-		DecimalFormat f = new DecimalFormat("#.##");
+		DecimalFormat df = new DecimalFormat("#.##");
 		JOptionPane.showMessageDialog(null, "Programa para calcular el máximo y mínimo de 3 números introducidos por teclado.");
 		
 		float d[] = new float[3];
