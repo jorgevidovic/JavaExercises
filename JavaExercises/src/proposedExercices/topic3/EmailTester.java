@@ -10,10 +10,5 @@ public class EmailTester {
 		String c = email.substring(a);
 		
 		JOptionPane.showMessageDialog(null, "El dominio del correo introducido es: "+c);
-		
-
-
 	}
-
-
 }
