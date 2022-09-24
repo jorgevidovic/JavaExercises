@@ -22,9 +22,9 @@ public class ArrayCopier {
 		JOptionPane.showMessageDialog(null, "El Array introducido inicialmente es: "+w+"\nEl Array ordenado es: "+z);
 		
 		String i = JOptionPane.showInputDialog("Introduce un valor de la matriz para saber su posición:");
-		int a = w.indexOf(i);
-		int b =z.indexOf(i);
+		int a = (Arrays.binarySearch(x,i)+1);
+		int b = (Arrays.binarySearch(y,i)+1);
 		
-		JOptionPane.showMessageDialog(null, "La posición de "+i+" en el Array incial es: "+a+"\nLa posición de "+i+" en el Array ordenado es: "+b);
+		JOptionPane.showMessageDialog(null, "La posición de "+i+" en el Array ordenado es: "+b);
 	}
 }
