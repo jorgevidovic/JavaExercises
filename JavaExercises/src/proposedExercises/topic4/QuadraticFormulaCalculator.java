@@ -1,5 +1,4 @@
 package proposedExercises.topic4;
-import java.math.*;
 import javax.swing.JOptionPane;
 public class QuadraticFormulaCalculator {
 	
@@ -15,12 +14,15 @@ public class QuadraticFormulaCalculator {
 			float x1;
 			float x2;
 			
+			float isReal =(float)Math.sqrt(Math.pow(b, 2)-4*a*c);
+			
 			if(a==0){
 				x = -(c/b);
 				JOptionPane.showMessageDialog(null, "Valores introducidos: "
 					    +"\na: "+a
 						+"\nb: "+b
 						+"\nc: "+c
+						+"\n----------"
 						+"\nx1: "+x
 						+"\nx2: "+x);
 			}
@@ -31,6 +33,7 @@ public class QuadraticFormulaCalculator {
                         +"\na: "+a
                         +"\nb: "+b
                         +"\nc: "+c
+                        +"\n----------"
                         +"\nx1: "+x
                         +"\nx2: "+x);
 			}
@@ -43,12 +46,16 @@ public class QuadraticFormulaCalculator {
                         +"\na: "+a
                         +"\nb: "+b
                         +"\nc: "+c
+                        +"\n----------"
                         +"\nx1: "+x1
                         +"\nx2: "+x2);
 			}
 			
+			else if(isReal<0){
+				JOptionPane.showMessageDialog(null, "No existe solución real.");
+			}
+			
 			else {
-				float isReal =(float)Math.sqrt(Math.pow(b, 2)-4*a*c);
 				x1 = (-b+isReal)/2*a;	
 				x2 = (-b-isReal)/2*a;
 				
@@ -56,12 +63,11 @@ public class QuadraticFormulaCalculator {
                         +"\na: "+a
                         +"\nb: "+b
                         +"\nc: "+c
+                        +"\n----------"
                         +"\nx1: "+x1
                         +"\nx2: "+x2);
 				
-				if(isReal<0){
-					JOptionPane.showMessageDialog(null, "No existe solución real.");
-				}
+				//Existe un error --> Apunta directamente a este segmento de código
 			}
 		} catch(Exception e) {
 			JOptionPane.showMessageDialog(null, "Algo ha ido mal, intentalo de nuevo.");
