@@ -11,12 +11,13 @@ public class QuadraticFormulaCalculator {
 			float c = Float.parseFloat(JOptionPane.showInputDialog("Introduce la variable C: "));
 			
 			float x = 0;
+			float i = 0;
 			float x1 = 0;
 			float x2 = 0;
 			
-			float isReal =(float)Math.sqrt(Math.pow(b, 2)-4*a*c);
+			float isReal =(float)Math.sqrt((float)Math.pow(b, 2)-4*a*c);
 			
-			if(Float.compare(a,0) == 0){
+			if(Float.compare(a,i) ==0){
 				x = -(c/b);
 				JOptionPane.showMessageDialog(null, "Valores introducidos: "
 					    +"\na: "+a
@@ -27,7 +28,7 @@ public class QuadraticFormulaCalculator {
 						+"\nx2: "+x);
 			}
 			
-			else if(Float.compare(b,0) == 0){
+			else if(Float.compare(b,i) == 0){
 				x1 = (float)Math.sqrt(-(c/b));
 				x2 = -(x1); 
 				JOptionPane.showMessageDialog(null, "Valores introducidos: "
@@ -39,7 +40,7 @@ public class QuadraticFormulaCalculator {
                         +"\nx2: "+x2);
 			}
 			
-			else if(Float.compare(c,0) == 0){
+			else if(Float.compare(c,i) == 0){
 				x1 = 0;
 				x2 = -(b/a);
 				
@@ -50,10 +51,6 @@ public class QuadraticFormulaCalculator {
                         +"\n----------"
                         +"\nx1: "+x1
                         +"\nx2: "+x2);
-			}
-			
-			else if(isReal<0){
-				JOptionPane.showMessageDialog(null, "No existe solución real.");
 			}
 			
 			else {
