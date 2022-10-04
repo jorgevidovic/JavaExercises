@@ -1,7 +1,7 @@
 package proposedExercices.topic4;
 import javax.swing.JOptionPane;
 
-public class primeNumbercalculator {
+public class PrimeNumberCalculator {
 	public static void main(String[] args) {
 		try {
 		JOptionPane.showMessageDialog(null, "Programa para calcular si un número es primo.");
