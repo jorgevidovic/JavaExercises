@@ -1,4 +1,4 @@
-package proposedExercices.topic3;
+package proposedExercises.topic3;
 import javax.swing.JOptionPane;
 
 public class EmailTester {

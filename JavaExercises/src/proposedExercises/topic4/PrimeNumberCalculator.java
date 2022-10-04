@@ -1,4 +1,5 @@
-package proposedExercices.topic4;
+package proposedExercises.topic4;
+
 import javax.swing.JOptionPane;
 
 public class PrimeNumberCalculator {

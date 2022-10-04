@@ -1,4 +1,4 @@
-package proposedExercices.topic4;
+package proposedExercises.topic4;
 
 public class QuadraticFormulaCalculator {
 

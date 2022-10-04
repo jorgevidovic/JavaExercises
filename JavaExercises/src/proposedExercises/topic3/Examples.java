@@ -1,4 +1,4 @@
-package proposedExercices.topic3;
+package proposedExercises.topic3;
 import java.util.*;
 import javax.swing.*;
 public class Examples {

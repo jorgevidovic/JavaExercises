@@ -1,4 +1,4 @@
-package proposedExercices.topic3;
+package proposedExercises.topic3;
 import javax.swing.*;
 import java.text.DecimalFormat;
 public class ModuleCalculator {
