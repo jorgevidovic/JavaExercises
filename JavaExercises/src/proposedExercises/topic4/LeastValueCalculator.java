@@ -3,6 +3,7 @@ import java.util.Arrays;
 import javax.swing.JOptionPane;
 public class LeastValueCalculator {
 	
+	//Metodo para calcular el valor menor de un array
 	public static int getSmallest(int[] numbers, int total){  
 		Arrays.sort(numbers);  
 		return numbers[0];  
