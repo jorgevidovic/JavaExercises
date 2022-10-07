@@ -53,10 +53,9 @@ public class QuadraticFormulaCalculator {
 			//------------- Inicio del caso standard -------------
 			
 			else {
+				//ax2 + bx + c = 0 -->x1 = -b + Raíz(b2 -4ac)/2a ; x2 = -b - Raíz(b2-4ac)/2a
 				
-				//ax2 + bx + c = 0 -->x1 = -b + Raiz(b2 -4ac)/2a ; x2 = -b - Raiz(b2-4ac)/2a
 				double isReal = Math.sqrt((b*b)-(4*a*c));
-				
 				if (isReal>0) {
 					solution = true;
 					x1 = (-b+isReal)/2*a;	
