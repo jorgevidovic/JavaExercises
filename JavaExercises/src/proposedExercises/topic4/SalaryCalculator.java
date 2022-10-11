@@ -10,7 +10,7 @@ public class SalaryCalculator {
 		float pricePerHour = Float.parseFloat(JOptionPane.showInputDialog("Introduce el precio por hora trabajada: "));
 		float hoursWorked = Float.parseFloat(JOptionPane.showInputDialog("Introduce la cantidad de horas trabajadas: "));
 
-		float extraHoursSalary = (float)((hoursWorked-38)*pricePerHour*1.5);
+		float extraHoursSalary = (float)((hoursWorked-38)*(pricePerHour*1.5));
 		float bruteSalary = 0;
 		float netSalary = 0;
 		
@@ -33,7 +33,7 @@ public class SalaryCalculator {
 			}
 		
 		else if(hoursWorked > 38) {
-			bruteSalary = (float)(pricePerHour*38)+(pricePerHour*extraHoursSalary);
+			bruteSalary = (float)(pricePerHour*38)+extraHoursSalary;
 		}
 		
 		if (bruteSalary<=300){
@@ -47,8 +47,9 @@ public class SalaryCalculator {
 		// -- Impresion por pantalla del resultado --
 		
 		while(pricePerHour>0 && hoursWorked>0) {
-			JOptionPane.showMessageDialog(null, "El salario bruto es igual a: "+bruteSalary+"€"
-											   +"\nEl salario neto es igual a: "+netSalary+"€");
+			JOptionPane.showMessageDialog(null,
+					"-- Salario Calculado --"+"\nEl salario bruto es igual a: "+bruteSalary+"€"
+				    +"\nEl salario neto es igual a: "+netSalary+"€");
 			break;
 		}
 		
