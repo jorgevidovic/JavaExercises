@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 public class LeastValueCalculator {
 	
 	//Metodo para calcular el valor menor de un array
+	
 	public static int getSmallest(int[] numbers, int total){  
 		Arrays.sort(numbers);  
 		return numbers[0];  
@@ -20,6 +21,6 @@ public class LeastValueCalculator {
 		 numbers[3] = Integer.parseInt(JOptionPane.showInputDialog("Introduce el cuarto valor: "));
 		 
 		 JOptionPane.showMessageDialog(null, "Valores introducidos: "+Arrays.toString(numbers)
-		 								  +"\nValor menor introducido: "+getSmallest(numbers,4));
+		 								  +"\nValor menor introducido: "+getSmallest(numbers,numbers.length));
 	}
 }
