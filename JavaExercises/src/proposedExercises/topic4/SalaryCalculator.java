@@ -53,15 +53,6 @@ public class SalaryCalculator {
 			break;
 		}
 		
-		
-
-		
-
-		
-
-		
-
-
 		} catch(Exception e){
 			JOptionPane.showMessageDialog(null, "Algo ha ido mal, intentalo de nuevo.");}
 	}
