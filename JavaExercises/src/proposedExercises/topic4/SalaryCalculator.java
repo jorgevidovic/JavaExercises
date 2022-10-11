@@ -48,7 +48,7 @@ public class SalaryCalculator {
 		
 		while(pricePerHour>0 && hoursWorked>0) {
 			JOptionPane.showMessageDialog(null,
-					"-- Salario Calculado --"+"\nEl salario bruto es igual a: "+bruteSalary+"€"
+					"-- Salario Calculado --\n"+"\nEl salario bruto es igual a: "+bruteSalary+"€"
 				    +"\nEl salario neto es igual a: "+netSalary+"€");
 			break;
 		}
