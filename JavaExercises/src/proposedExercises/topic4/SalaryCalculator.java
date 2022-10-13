@@ -5,7 +5,7 @@ public class SalaryCalculator {
 
 	public static void main(String[] args) {
 		try {
-		JOptionPane.showMessageDialog(null, "Programa para calcular el salario neto y bruto semanal y mensual de un trabajador semanalmente.");
+		JOptionPane.showMessageDialog(null, "Programa para calcular el salario neto y bruto semanal de un trabajador.");
 		
 		float pricePerHour = Float.parseFloat(JOptionPane.showInputDialog("Introduce el precio por hora trabajada: "));
 		float hoursWorked = Float.parseFloat(JOptionPane.showInputDialog("Introduce la cantidad de horas trabajadas: "));
