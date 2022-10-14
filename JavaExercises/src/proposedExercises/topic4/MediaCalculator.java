@@ -17,7 +17,7 @@ public class MediaCalculator {
 		JOptionPane.showMessageDialog(null,"Programa para:\n"
 									   + "- Contar los valores de una matriz que estan por encima de la media.\n"
 									   + "- Calcular la desviacion media de la matriz.\n");
-		
+
 		Random rnd = new Random();
 		float matriz[] =  new float[10];
 		float sum=0, sum_2=0, average=0, averageDesviation=0;
@@ -34,6 +34,7 @@ public class MediaCalculator {
 		}
 		sum = Float.parseFloat(df.format(sum));
 		average = sum/matriz.length;
+		
 		for(float valor:matriz) {
 			if(valor>average) {
 				contator+=1;
