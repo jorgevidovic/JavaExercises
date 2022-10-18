@@ -1,5 +1,7 @@
 package proposedExercises.topic4;
 
+import java.util.Arrays;
+
 public class Tests {
 	
 	// -- Funcion que recibe un numero y devuelve true si es par. --
@@ -18,6 +20,7 @@ public class Tests {
 			return false;
 		}
 	}
+	//-----------------------------------------------------------------------
 	
 	// -- Funcion que recibe un Array y le suma 10 al valor en la posicion[0]. --
 	public static void addTen(int array[]) {
@@ -27,7 +30,6 @@ public class Tests {
 	public static void main(String[] args) {
 		//Space to make tests
 		
-		//-----------------------------------------------------------------------
 		
 		int number = 9;
 		boolean pare = pareCalculator(number);
@@ -42,8 +44,8 @@ public class Tests {
 		//-----------------------------------------------------------------------
 		int array[] = {0,2,3,4};
 		
-		System.out.println(array.toString());
+		System.out.println(Arrays.toString(array));
 		addTen(array);
-		System.out.println(array.toString());	
+		System.out.println(Arrays.toString(array));	
 		}
 }
