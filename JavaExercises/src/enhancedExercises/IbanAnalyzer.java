@@ -1,4 +1,4 @@
-package exercises;
+package enhancedExercises;
 import java.util.Scanner;
 public class IbanAnalyzer {
 	public static void main(String[] args) {

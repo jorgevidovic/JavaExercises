@@ -1,4 +1,4 @@
-package exercises;
+package enhancedExercises;
 import java.util.Arrays;
 import javax.swing.JOptionPane;
 

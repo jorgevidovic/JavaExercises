@@ -1,4 +1,4 @@
-package exercises;
+package enhancedExercises;
 import javax.swing.JOptionPane;
 public class PhraseAnalyzer {
 	public static void main(String[] args) {
