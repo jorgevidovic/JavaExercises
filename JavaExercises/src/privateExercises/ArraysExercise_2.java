@@ -1,9 +1,6 @@
 package privateExercises;
-
 import java.util.Arrays;
-
 import javax.swing.JOptionPane;
-
 public class ArraysExercise_2 {
 	
 	public static void main(String[] args) {
@@ -225,7 +222,7 @@ public class ArraysExercise_2 {
 					// Bucle para copiar en un array auxilar las posiciones de los valores multiplos de 3 y 5.
 					for (int i = 0; i < array.length; i++) {
 					    if (array[i]%3==0 && array[i]%5==0) {
-					    	array8[y] = i;  
+					    	array8[y] = array[i];  
 					    	array9[y] = Integer.toHexString(array8[y]);
 					        y++;
 					    }
