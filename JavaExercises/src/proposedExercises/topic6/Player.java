@@ -17,9 +17,9 @@ public class Player {
 
 	// Setters and getters zone
 	public void setCode(String code) {
-		//if (code.matches("[A-Z][0-9]")) {
+		if (code.matches("[A-Z]{2}[0-9]{3}")) {
 			this.code = code;
-		//}
+		}
 	}
 	
 	public String getCode() {
@@ -63,7 +63,7 @@ public class Player {
 
 	@Override
 	public String toString() {
-		return "Player [Código = " + code + ", Nombre = " + name + ", Puntos = " + points + "]";
+		return "Jugador [Código = " + code + ", Nombre = " + name + ", Puntos = " + points + "]";
 	}
 	
 	
