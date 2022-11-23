@@ -1,16 +1,17 @@
 package proposedExercises.topic6;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 
 public class Request {
 	private String code;
 	private String title;
 	private LocalDate date;
 	private Status status;
-	
+
 	public Request(String code, String title) {
 		super();
-		if(code.length()==4) {
+		if (code.length() == 4) {
 			this.code = code;
 		}
 		this.title = title;
@@ -22,16 +23,8 @@ public class Request {
 		return code;
 	}
 
-	public void setCode(String code) {
-		this.code = code;
-	}
-
 	public String getTitle() {
 		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
 	}
 
 	public LocalDate getDate() {
@@ -49,17 +42,26 @@ public class Request {
 	public void setStatus(Status status) {
 		this.status = status;
 	}
-	
-	
+
+	public static String showRequests(Request request[]) {
+		int x = 0;
+		for (int i = 0; i < request.length; i++) {
+			if (request[i] != null) {
+				x++;
+			}
+		}
+		String request2[] = new String[x];
+
+		for (int i = 0; i < request2.length; i++) {
+			request2[i] = String.valueOf(request[i]);
+		}
+		return Arrays.toString(request2);
+	}
 
 	@Override
 	public String toString() {
-		return "Request [code=" + code + ", title=" + title + ", date=" + date + ", status=" + status + "]";
+		return "\nSolicitud [ Código = " + "'" + code + "'" + ", Asunto = " + "'" + title + "'" + ", Fecha = " + "'"
+				+ date + "'" + ", Estado = " + "'" + status + "'" + " ]";
 	}
-	
-	
-	
-	
-	
-	
+
 }
