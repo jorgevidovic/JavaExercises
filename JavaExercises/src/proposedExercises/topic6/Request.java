@@ -3,6 +3,8 @@ package proposedExercises.topic6;
 import java.time.LocalDate;
 import java.util.Arrays;
 
+import javax.swing.JOptionPane;
+
 public class Request {
 	private String code;
 	private String title;
@@ -50,12 +52,30 @@ public class Request {
 				x++;
 			}
 		}
+		
 		String request2[] = new String[x];
 
 		for (int i = 0; i < request2.length; i++) {
 			request2[i] = String.valueOf(request[i]);
 		}
 		return Arrays.toString(request2);
+	}
+
+	public static String saveRequest(Request request[], Request request1) {
+		boolean saved = false;
+		for (int i = 0; i < request.length; i++) {
+			if (request[i] == null) {
+				request[i] = request1;
+				saved = true;
+				break;
+			}
+		}
+		if (saved) {
+			return "Se ha guardado la solicitud.\n" + Request.showRequests(request);
+
+		} else {
+			return "No se ha podido guardar la solicitud.";
+		}
 	}
 
 	@Override
