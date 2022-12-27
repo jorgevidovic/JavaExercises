@@ -1,10 +1,12 @@
 package enhancedExercises;
 import java.util.Arrays;
+
 import javax.swing.JOptionPane;
 
 public class ArraysExcercise {
 	public static void main(String[] args) {
-		JOptionPane.showMessageDialog(null, "Ejercicio 1 - Programa para trabajar con valores 10 enteros.");
+
+JOptionPane.showMessageDialog(null, "Ejercicio 1 - Programa para trabajar con valores 10 enteros.");
 		
 		int x[] = new int [10];       //Variable donde se almacenará la matriz original.
 		int y[] = new int [x.length]; //Variable donde se almacenará la copia de la matriz.
