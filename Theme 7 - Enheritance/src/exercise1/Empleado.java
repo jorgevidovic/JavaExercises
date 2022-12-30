@@ -59,6 +59,7 @@ public class Empleado {
 	public void setSalario(float salario) {
 		this.salario = salario;
 	}
+	// - Metodos para el desarrollo del programa - 
 
 	public int calcularAntiguedad() {
 		Period periodo = Period.between(fechaContratacion, LocalDate.now());
