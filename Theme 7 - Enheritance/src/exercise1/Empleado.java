@@ -2,22 +2,32 @@ package exercise1;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Iterator;
 
 public class Empleado {
 	private String dni;
 	private LocalDate fechaNacimiento;
 	private String nombre;
 	private LocalDate fechaContratacion;
-	private float salario;
-	private static float salarioBase = 1000;
+	protected float salario;
+	protected static float salarioBase = 1000;
 
-	public Empleado(String dni, LocalDate fechaNacimiento, String nombre, LocalDate fechaContratacion, float salario) {
+	public Empleado(String nombre, String dni, LocalDate fechaNacimiento, LocalDate fechaContratacion) {
 		super();
+		this.nombre = nombre;
 		this.dni = dni;
 		this.fechaNacimiento = fechaNacimiento;
-		this.nombre = nombre;
 		this.fechaContratacion = fechaContratacion;
 		this.calcularSalario();
+	}
+	
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public String getDni() {
@@ -36,13 +46,6 @@ public class Empleado {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
 
 	public LocalDate getFechaContratacion() {
 		return fechaContratacion;
@@ -59,7 +62,17 @@ public class Empleado {
 	public void setSalario(float salario) {
 		this.salario = salario;
 	}
-	// - Metodos para el desarrollo del programa - 
+	
+	// - Metodos para el desarrollo del programa -
+
+	public static void guardarEmpleado(Empleado empleado, Empleado[] plantilla) {
+		for (int i = 0; i < plantilla.length; i++) {
+			if (plantilla[i] == null) {
+				plantilla[i] = empleado;
+				break;
+			}
+		}
+	}
 
 	public int calcularAntiguedad() {
 		Period periodo = Period.between(fechaContratacion, LocalDate.now());
