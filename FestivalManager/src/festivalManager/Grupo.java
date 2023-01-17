@@ -63,12 +63,4 @@ public class Grupo {
 		float coste_total = coste + (coste * popularidad) / 100.0f;
 		return coste_total;
 	}
-
-	@Override
-	public String toString() {
-		return "\nNombre: " + nombre + "\n\nTiempo de actuación: " + tiempoActuacion + " minutos" + "\nPopularidad: "
-				+ popularidad + "\nCoste: " + coste + "€" + "\nCoste Total: " + calcularPrecioFinal(coste, popularidad)
-				+ "€\n";
-	}
-
 }
