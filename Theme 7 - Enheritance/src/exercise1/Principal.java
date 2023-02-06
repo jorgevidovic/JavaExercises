@@ -10,9 +10,13 @@ public class Principal {
 		Empleado[] plantilla = new Empleado[10];
 
 		do {
-			o = JOptionPane.showInputDialog(null,
-					"- Gestor de empleados -/n" + "a) Guardar un operario./n" + "b) Guardar un administrativo./n"
-							+ "c) Guardar un directivo./n" + "b) Actualizar salario de los empleados./n" + "x) Salir.")
+			o = JOptionPane.showInputDialog(null, 
+							"- Gestor de empleados -" 
+							+ "\na) Guardar un operario." 
+							+ "\nb) Guardar un administrativo."
+							+ "\nc) Guardar un directivo." 
+							+ "\nb) Actualizar salario de los empleados." 
+							+ "\nx) Salir.")
 					.toLowerCase().charAt(0);
 			switch (o) {
 			case 'a':
@@ -26,8 +30,12 @@ public class Principal {
 				LocalDate fechaContratacion = LocalDate.parse(fechaC, formato);
 				
 				Empleado empleado = new Empleado(nombre, dni, fechaNacimiento, fechaContratacion);
-				
 				Empleado.guardarEmpleado(empleado, plantilla);
+				
+				for (Empleado empleado2 : plantilla) {
+					if(empleado2!=null)
+						System.out.println(empleado2);
+				}
 			}
 		} while (o != 'x');
 	}

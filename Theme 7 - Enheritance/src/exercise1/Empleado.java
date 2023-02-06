@@ -2,7 +2,6 @@ package exercise1;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.Iterator;
 
 public class Empleado {
 	private String dni;
@@ -18,9 +17,8 @@ public class Empleado {
 		this.dni = dni;
 		this.fechaNacimiento = fechaNacimiento;
 		this.fechaContratacion = fechaContratacion;
-		this.calcularSalario();
+		setSalario(salarioBase);
 	}
-	
 
 	public String getNombre() {
 		return nombre;
@@ -46,7 +44,6 @@ public class Empleado {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 
-
 	public LocalDate getFechaContratacion() {
 		return fechaContratacion;
 	}
@@ -60,9 +57,10 @@ public class Empleado {
 	}
 
 	public void setSalario(float salario) {
-		this.salario = salario;
+		int antiguedad = calcularAntiguedad();
+		this.salario = salarioBase + (antiguedad / 3) * salarioBase * 0.05f;
 	}
-	
+
 	// - Metodos para el desarrollo del programa -
 
 	public static void guardarEmpleado(Empleado empleado, Empleado[] plantilla) {
@@ -77,11 +75,6 @@ public class Empleado {
 	public int calcularAntiguedad() {
 		Period periodo = Period.between(fechaContratacion, LocalDate.now());
 		return periodo.getYears();
-	}
-
-	public void calcularSalario() {
-		int antiguedad = calcularAntiguedad();
-		salario = salarioBase + (antiguedad / 3) * salarioBase * 0.05f;
 	}
 
 	@Override
