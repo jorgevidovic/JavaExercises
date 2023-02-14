@@ -26,12 +26,14 @@ public class Principal {
 				fechaN = JOptionPane.showInputDialog("Introduce la fecha de nacimiento del operario ");
 				fechaC = JOptionPane.showInputDialog("Introduce la fecha de contratación: ");
 				String seguroAccidentes = JOptionPane.showInputDialog("Introduce el número de poliza de accidentes: ");
-				String responsabilidadCivil = JOptionPane.showInputDialog("Introduce el número de poliza de accidentes: ");
+				String responsabilidadCivil = JOptionPane
+						.showInputDialog("Introduce el número de poliza de accidentes: ");
 
 				fechaNacimiento = LocalDate.parse(fechaN, formato);
 				fechaContratacion = LocalDate.parse(fechaC, formato);
 
-				Operario operario = new Operario(nombre, dni, fechaNacimiento, fechaContratacion, seguroAccidentes,responsabilidadCivil);
+				Operario operario = new Operario(nombre, dni, fechaNacimiento, fechaContratacion, seguroAccidentes,
+						responsabilidadCivil);
 				Empleado.guardarEmpleado(operario, plantilla);
 
 				for (Empleado empleado2 : plantilla) {
