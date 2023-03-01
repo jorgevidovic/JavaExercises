@@ -1,0 +1,3 @@
+BB01,La vida es bella,117,Roberto Benigni,Drama,false,0
+BB02,Forrest Gump,140,Robert Zemeckis,Comedia,false,0
+BB03,Gladiator,155,Ridley Scott,Accion,false,0

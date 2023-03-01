@@ -1,0 +1,3 @@
+DD01,0212JIV,Mercedes Benz,Clase G,false,null,null
+DD02,0112TPG,Bugatti,Chiron,false,null,null
+DD03,4157POX,Lamborghini,Urus,false,null,null
