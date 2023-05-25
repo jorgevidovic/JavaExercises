@@ -1,5 +1,6 @@
 package gestorNotificaciones;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class GestorNotificaciones {
@@ -7,6 +8,6 @@ public class GestorNotificaciones {
 	protected List<Observador> observadores;
 	
 	private GestorNotificaciones() {
-		
+		observadores = new ArrayList<Observador>();
 	}
 }
